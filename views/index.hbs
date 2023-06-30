@@ -5,6 +5,7 @@
 			<button id="bt1">Agregar Gastos</button>
 			<button id="bt2">Historial</button>
 		</div>
+	</div>
 		<div class="box-content">
 
 			{{!-- INICIO DE AGREGAR GASTOS --}}
@@ -62,7 +63,6 @@
 									<th>Comentario</th>
 									<th>Monto</th>
 									<th></th>
-									<th></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -72,17 +72,17 @@
 									<td>{{this.descripcion}}</td>
 									<td>{{this.monto}}</td>
 									<td>
-										<div>
-											<form class="updateGasto" data-id="{{this.id}}">
-												<button type="submit" class="bt-editar">Editar</button>
-											</form>
-										</div>
-									</td>
-									<td>
-										<div>
-											<form class="deleteGasto" data-id="{{this.id}}">
-												<button type="submit" class="bt-eliminar">Eliminar</button>
-											</form>
+										<div class="bt-flex">
+											<div>
+												<form class="updateGasto" data-id="{{this.id}}">
+													<button type="submit" class="bt-editar">Editar</button>
+												</form>
+											</div>
+											<div>
+												<form class="deleteGasto" data-id="{{this.id}}">
+													<button type="submit" class="bt-eliminar">Eliminar</button>
+												</form>
+											</div>
 										</div>
 									</td>
 								</tr>
@@ -92,7 +92,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			{{!-- FIN DE HISTORIAL --}}
 
 			{{!-- INICIO DE ROOMMATES --}}
@@ -129,9 +129,7 @@
 				</div>
 			</div>
 			{{!-- FIN DE ROOMMATES --}}
-
 		</div>
-	</div>
 </header>
 
 

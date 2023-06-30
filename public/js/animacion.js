@@ -2,8 +2,8 @@ let mainForm = document.querySelector('.mainForm');
 let historial = document.querySelector('.historial');
 let roommates = document.querySelector('.roommates');
 
-// Mostrar la mainForm al principio
-historial.style.display = "block";
+// Mostrar roommates al principio
+roommates.style.display = "block";
 
 // Manejo de animacion de los box.
 document.getElementById("bt1").addEventListener('click', (e) => {
