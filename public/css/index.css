@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background: linear-gradient(90deg, hsla(198, 65%, 34%, 1) 0%, hsla(178, 44%, 32%, 1) 100%);
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
     overflow-x: hidden;
 }
 /* body{
@@ -290,14 +290,14 @@ h2{
     }
 
     100% {
-        left: 25%;
+        left: 20%;
         opacity: 1;
     }
 }
 
 @keyframes desaparecer {
     0% {
-        left: 25%;
+        left: 20%;
         opacity: 1;
     }
 
