@@ -40,24 +40,20 @@ body {
         background-position: 0% 50%;
     }
 }
-
 header {
     width: 100%;
     min-height: 100vh;
     height: auto;
 }
-
 h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
-
 .container {
     max-width: 1200px;
     height: auto;
     margin: auto;
 }
-
 .box-button {
     width: 100%;
     height: 100px;
@@ -66,7 +62,6 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-
 .box-button button {
     margin: 0 10px;
     height: 50px;
@@ -81,34 +76,28 @@ h2 {
     transition: 1s;
     cursor: pointer;
 }
-
 .box-button button:hover {
     transform: scale(1.1);
     transition: 1s;
 }
-
 .box-content {
     height: auto;
     min-height: 600px;
     position: relative;
 }
-
 .box {
     height: auto;
     width: auto;
     position: absolute;
     animation-fill-mode: forwards;
     display: none;
-    top: 5%;
     left: 25%;
     transform: translate(-50%, -50%);
 }
-
 .mainForm {
     animation-name: aparicion;
     animation-duration: 1s;
 }
-
 .historial {
     animation-name: aparicion;
     animation-duration: 1s;
