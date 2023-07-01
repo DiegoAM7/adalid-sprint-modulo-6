@@ -4,13 +4,11 @@ html {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
     overflow-x: hidden;
@@ -23,7 +21,6 @@ body {
     animation: gradient 5s ease infinite;
     overflow-x: hidden;
 }
-
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -37,7 +34,6 @@ body {
         background-position: 0% 50%;
     }
 } */
-
 header {
     width: 100%;
     min-height: 100vh;
@@ -46,13 +42,11 @@ header {
 h2{
     text-align: center;
 }
-
 .container {
     max-width: 1200px;
     height: auto;
     margin: auto;
 }
-
 .box-button {
     width: 100%;
     height: 100px;
@@ -84,7 +78,6 @@ h2{
     min-height: 600px;
     position: relative;
 }
-
 .box {
     height: auto;
     width: auto;
@@ -92,29 +85,22 @@ h2{
     animation-fill-mode: forwards;
     display: none;
 }
-
 .mainForm {
     animation-name: aparicion;
     animation-duration: 1s;
 }
-
 .historial {
     animation-name: aparicion;
     animation-duration: 1s;
 }
-
 .roommates {
     animation-name: aparicion;
     animation-duration: 1s;
 }
-
 .ocultar {
     animation-name: desaparecer;
     animation-duration: 1s;
 }
-
-
-
 /*PRINCIPIO ESTILO DE AGREGAR GASTOS*/
 .box-title-Gastos{
     width: 100%;
@@ -162,7 +148,7 @@ h2{
     height: 100%;
     width: 50%;
     border-radius: 0 20px 20px 0;
-    background-image: url('https://b7q5h9f5.rocketcdn.me/wp-content/uploads/2021/05/iStock-1211443622-1-e1620120714339-1024x576.jpg');
+    background-image: url('../img/planeta.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -185,7 +171,6 @@ h2{
     transform: scale(1);
     transition: 1s;
 }
-
 .form-button button:hover{
     transform: scale(1.1);
     transition: 1s;
@@ -193,10 +178,7 @@ h2{
     border: 1px solid black;
     color: black;
 }
-
 /*FIN ESTILO DE AGREGAR GASTOS*/
-
-
 /*INICIO ESTILO DE TABLAS*/
 .style-tablas{
     width: 900px;
@@ -215,7 +197,6 @@ h2{
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 .box-table table thead{
     background-color: black;
     height: 40px;
@@ -225,10 +206,7 @@ h2{
     height: 50px;
     border-bottom: 1px solid black;
 }
-
 /*FIN ESTILO DE TABLAS*/
-
-
 /*PRINCIPIO ESTILO DE ROOMMATES*/
 #addRoommate button{
     color: white;
@@ -250,8 +228,6 @@ h2{
     color: black;
 }
 /*FIN ESTILO DE ROOMMATES*/
-
-
 /*INICIO ESTILO DE HISTORIAL*/
 .table-button button{
     height: 40px;
@@ -269,12 +245,12 @@ h2{
     transition: 1s;
 }
 .bt-eliminar{
-    background-image: url('https://www.pngplay.com/wp-content/uploads/7/Delete-Icon-PNG-HD-Quality.png');
+    background-image: url('../img/eliminar.png');
     background-position: center;
     background-size: cover;
 }
 .bt-editar{
-    background-image: url('https://cdn.icon-icons.com/icons2/841/PNG/512/circle-edit-line_icon-icons.com_66940.png');
+    background-image: url('../img/editar.png');
     background-position: center;
     background-size: cover;
 }
@@ -284,57 +260,26 @@ h2{
     align-items: center;
 }
 /*FIN ESTILO DE HISTORIAL*/
-
 /*INICIO KEYFRAMES*/
 @keyframes aparicion {
-    0% {
-        left: -100%;
-        opacity: 0;
-    }
-
-    100% {
-        left: 20%;
-        opacity: 1;
-    }
+    0% {left: -100%;opacity: 0;}
+    100% {left: 25%;opacity: 1;}
 }
 
 @keyframes desaparecer {
-    0% {
-        left: 20%;
-        opacity: 1;
-    }
-
-    100% {
-        left: 100%;
-        opacity: 0;
-    }
+    0% {left: 25%;opacity: 1;}
+    100% {left: 100%;opacity: 0;}
 }
 /*CIERRE KEYFRAMES*/
-
 /*INICIO MEDIA*/
 @media (max-width: 1201px){
     @keyframes aparicion {
-        0% {
-            left: -100%;
-            opacity: 0;
-        }
-    
-        100% {
-            left: 5%;
-            opacity: 1;
-        }
+        0% {left: -100%;opacity: 0;}
+        100% {left: 5%;opacity: 1;}
     }
-    
     @keyframes desaparecer {
-        0% {
-            left: 5%;
-            opacity: 1;
-        }
-    
-        100% {
-            left: 100%;
-            opacity: 0;
-        }
+        0% {left: 5%;opacity: 1;}
+        100% {left: 100%;opacity: 0;}
     }
 }
 @media (max-width: 1023px) {
@@ -356,27 +301,13 @@ h2{
         width: 700px;
     }
     @keyframes aparicion {
-        0% {
-            left: -100%;
-            opacity: 0;
-        }
-    
-        100% {
-            left: 10%;
-            opacity: 1;
-        }
+        0% {left: -100%;opacity: 0;}
+        100% {left: 10%;opacity: 1;}
     }
     
     @keyframes desaparecer {
-        0% {
-            left: 10%;
-            opacity: 1;
-        }
-    
-        100% {
-            left: 100%;
-            opacity: 0;
-        }
+        0% {left: 10%;opacity: 1;}
+        100% {left: 100%;opacity: 0;}
     }
 }
 @media (max-width: 767px){
@@ -399,27 +330,12 @@ h2{
         margin: 5px 0;
     }
     @keyframes aparicion {
-        0% {
-            left: -100%;
-            opacity: 0;
-        }
-    
-        100% {
-            left: 0%;
-            opacity: 1;
-        }
+        0% {left: -100%;opacity: 0;}
+        100% {left: 0%;opacity: 1;}
     }
-    
     @keyframes desaparecer {
-        0% {
-            left: 0%;
-            opacity: 1;
-        }
-    
-        100% {
-            left: 100%;
-            opacity: 0;
-        }
+        0% {left: 0%;opacity: 1;}
+        100% {left: 100%;opacity: 0;}
     }
 }
 /*CIERRE MEDIA*/
