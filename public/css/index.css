@@ -9,10 +9,14 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+/* PRIMER FONDO PARA OCUPAR MENOS RECURSOS*/
+
 /* body {
     background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
     overflow-x: hidden;
 } */
+
 body{
     place-content: center;
     background: rgb(189, 189, 189);
