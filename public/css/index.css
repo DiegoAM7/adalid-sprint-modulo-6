@@ -4,6 +4,7 @@ html {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -17,33 +18,46 @@ html {
     overflow-x: hidden;
 } */
 
-body{
+body {
     place-content: center;
     background: rgb(189, 189, 189);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 143, 38, 1) 0%, rgba(150, 126, 197, 1) 48%, rgba(0, 255, 222, 1) 100%);
-    background-size: 200% 100%;
+    background-size: 300% 100%;
     animation: gradient 5s ease infinite;
     overflow-x: hidden;
 }
+
 @keyframes gradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
+
 header {
     width: 100%;
     min-height: 100vh;
     height: auto;
 }
-h2{
+
+h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
+
 .container {
     max-width: 1200px;
     height: auto;
     margin: auto;
 }
+
 .box-button {
     width: 100%;
     height: 100px;
@@ -52,7 +66,8 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.box-button button{
+
+.box-button button {
     margin: 0 10px;
     height: 50px;
     width: 120px;
@@ -66,49 +81,58 @@ h2{
     transition: 1s;
     cursor: pointer;
 }
-.box-button button:hover{
+
+.box-button button:hover {
     transform: scale(1.1);
     transition: 1s;
 }
-.box-content {  
+
+.box-content {
     height: auto;
     min-height: 600px;
     position: relative;
 }
+
 .box {
     height: auto;
     width: auto;
     position: absolute;
     animation-fill-mode: forwards;
     display: none;
-    top: 10%;
+    top: 5%;
     left: 25%;
     transform: translate(-50%, -50%);
 }
+
 .mainForm {
     animation-name: aparicion;
     animation-duration: 1s;
 }
+
 .historial {
     animation-name: aparicion;
     animation-duration: 1s;
 }
+
 .roommates {
     animation-name: aparicion;
     animation-duration: 1s;
 }
+
 .ocultar {
     animation-name: desaparecer;
     animation-duration: 1s;
 }
+
 /*PRINCIPIO ESTILO DE AGREGAR GASTOS*/
-.box-title-Gastos{
+.box-title-Gastos {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
 }
-.formulario{
+
+.formulario {
     width: 700px;
     height: 600px;
     background-color: white;
@@ -116,7 +140,8 @@ h2{
     display: flex;
     margin-bottom: 3rem;
 }
-.content-form{
+
+.content-form {
     height: 100%;
     width: 50%;
     display: flex;
@@ -124,27 +149,32 @@ h2{
     justify-content: center;
     padding: 1rem;
 }
-.content-form form{
+
+.content-form form {
     width: 70%;
     margin: auto;
 }
+
 .content-form form input,
-.content-form form select{
+.content-form form select {
     height: 30px;
     border: none;
     outline: none;
     border-bottom: 1px solid black;
     font-size: 16px;
 }
-.content-form form label{
+
+.content-form form label {
     font-size: 18px;
     margin: 10px 0;
 }
-.column{
+
+.column {
     display: flex;
     flex-direction: column;
 }
-.form-img{
+
+.form-img {
     height: 100%;
     width: 50%;
     border-radius: 0 20px 20px 0;
@@ -152,14 +182,16 @@ h2{
     background-position: center;
     background-size: cover;
 }
-.form-button{
+
+.form-button {
     width: 100%;
     height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.form-button button{
+
+.form-button button {
     color: white;
     height: 50px;
     padding: 10px;
@@ -171,16 +203,18 @@ h2{
     transform: scale(1);
     transition: 1s;
 }
-.form-button button:hover{
+
+.form-button button:hover {
     transform: scale(1.1);
     transition: 1s;
     background: none;
     border: 1px solid black;
     color: black;
 }
+
 /*FIN ESTILO DE AGREGAR GASTOS*/
 /*INICIO ESTILO DE TABLAS*/
-.style-tablas{
+.style-tablas {
     width: 700px;
     height: auto;
     min-height: 400px;
@@ -189,7 +223,8 @@ h2{
     padding: 2rem;
     margin-bottom: 2rem;
 }
-.box-table table{
+
+.box-table table {
     width: 100%;
     margin: 1rem auto;
     text-align: center;
@@ -197,18 +232,21 @@ h2{
     border-collapse: collapse;
     border-spacing: 0;
 }
-.box-table table thead{
+
+.box-table table thead {
     background-color: black;
     height: 40px;
     color: white;
 }
-.box-table table tbody tr td{
+
+.box-table table tbody tr td {
     height: 50px;
     border-bottom: 1px solid black;
 }
+
 /*FIN ESTILO DE TABLAS*/
 /*PRINCIPIO ESTILO DE ROOMMATES*/
-#addRoommate button{
+#addRoommate button {
     color: white;
     height: 50px;
     padding: 10px;
@@ -220,16 +258,18 @@ h2{
     transform: scale(1);
     transition: 1s;
 }
-#addRoommate button:hover{
+
+#addRoommate button:hover {
     transform: scale(1.1);
     transition: 1s;
     background: none;
     border: 1px solid black;
     color: black;
 }
+
 /*FIN ESTILO DE ROOMMATES*/
 /*INICIO ESTILO DE HISTORIAL*/
-.table-button button{
+.table-button button {
     height: 40px;
     width: 40px;
     color: white;
@@ -240,99 +280,140 @@ h2{
     transition: 1s;
     margin: 0 5px;
 }
-.table-button button:hover{
+
+.table-button button:hover {
     transform: scale(1.1);
     transition: 1s;
 }
-.bt-eliminar{
+
+.bt-eliminar {
     background-image: url('../img/eliminar.png');
     background-position: center;
     background-size: cover;
 }
-.bt-editar{
+
+.bt-editar {
     background-image: url('../img/editar.png');
     background-position: center;
     background-size: cover;
 }
-.bt-flex{
+
+.bt-flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /*FIN ESTILO DE HISTORIAL*/
 /*INICIO KEYFRAMES*/
 @keyframes aparicion {
-    0% {transform: translateX(-200%);opacity: 0;}
-    100% {transform: translateX(0);opacity: 1;}
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes desaparecer {
-    0% {transform: translateX(0);opacity: 1;}
-    100% {transform: translateX(200%);opacity: 0;}
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(200%);
+        opacity: 0;
+    }
 }
+
 /*CIERRE KEYFRAMES*/
 /*INICIO MEDIA*/
-@media (max-width: 4000px){
-    .box{
+@media (max-width: 4000px) {
+    .box {
         left: 40%;
     }
 }
-@media (max-width: 2000px){
-    .box{
-        left: 30%;
+
+@media (max-width: 2000px) {
+    .box {
+        left: 35%;
     }
 }
-@media(max-width: 1540px){
-    .box{
-        left: 20%;
+
+@media(max-width: 1540px) {
+    .box {
+        left: 25%;
     }
 }
-@media (max-width: 1201px){
-    .box{
+
+@media (max-width: 1201px) {
+    .box {
         left: 15%;
     }
 }
+
 @media (max-width: 1023px) {
-    .box{
+    .box {
         left: 10%;
     }
-    .formulario{
+
+    .formulario {
         width: 700px;
         height: 700px;
         flex-direction: column;
     }
-    .content-form{
+
+    .content-form {
         height: 70%;
         width: 100%;
     }
-    .form-img{
+
+    .form-img {
         height: 40%;
         width: 100%;
         border-radius: 0 0 20px 20px;
     }
-    .style-tablas{
+
+    .style-tablas {
         width: 700px;
     }
+
+    body {
+        background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+        overflow-x: hidden;
+        animation: none;
+    }
 }
-@media (max-width: 767px){
-    .box-content{
+
+@media (max-width: 767px) {
+    .box-content {
         width: 100%;
     }
-    .box{
+
+    .box {
         width: 100%;
         left: 0%;
     }
-    .formulario{
+
+    .formulario {
         width: 100%;
     }
-    .style-tablas{
+
+    .style-tablas {
         width: 100%;
     }
-    .bt-flex{
+
+    .bt-flex {
         flex-direction: column;
     }
-    .table-button button{
+
+    .table-button button {
         margin: 5px 0;
     }
 }
+
 /*CIERRE MEDIA*/
