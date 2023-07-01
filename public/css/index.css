@@ -9,11 +9,11 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-body {
+/* body {
     background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
     overflow-x: hidden;
-}
-/* body{
+} */
+body{
     place-content: center;
     background: rgb(189, 189, 189);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 143, 38, 1) 0%, rgba(150, 126, 197, 1) 48%, rgba(0, 255, 222, 1) 100%);
@@ -22,18 +22,10 @@ body {
     overflow-x: hidden;
 }
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-} */
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
 header {
     width: 100%;
     min-height: 100vh;
